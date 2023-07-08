@@ -18,6 +18,7 @@ namespace Hitman3Killer
             InitializeComponent();
             checkDisableAltF4.Checked = true;
             btnKeyHook.Select();
+            btnKeyHook_Click(null, null);
         }
 
         private void PushLog(object msg)

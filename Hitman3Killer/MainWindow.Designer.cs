@@ -85,7 +85,7 @@
             this.btnKeyHook.Name = "btnKeyHook";
             this.btnKeyHook.Size = new System.Drawing.Size(147, 27);
             this.btnKeyHook.TabIndex = 12;
-            this.btnKeyHook.Text = "Install Keyboard Hook";
+            this.btnKeyHook.Text = "Enable Hook";
             this.btnKeyHook.UseVisualStyleBackColor = true;
             this.btnKeyHook.Click += new System.EventHandler(this.btnKeyHook_Click);
             // 
