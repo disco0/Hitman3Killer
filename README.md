@@ -2,7 +2,11 @@
 
 ![](media/window-01.png)
 
-Utility for Freelancer mode speedruns. Kills HITMAN3 process via hotkey (<key>Right Ctrl</key>+<key>K</key>) or standard <key>Alt</key>+<key>F4</key> when enabled—only targets `HITMAN3.exe` processes, and only hooks/handles input when `HITMAN3.exe` window is active.
+Utility for Freelancer mode speedruns. 
+
+Kills HITMAN3 process via hotkey (<key>Right Ctrl</key>+<key>K</key>) or standard <key>Alt</key>+<key>F4</key> when enabled—only targets `HITMAN3.exe` processes, and only hooks/handles input when `HITMAN3.exe` window is active.
+
+Uses [GlobalHooks](https://github.com/Indieteur/GlobalHooks) library.
 
 ## TODO
 
