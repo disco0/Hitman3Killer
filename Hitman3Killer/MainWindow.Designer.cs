@@ -35,6 +35,7 @@
             this.btnKeyHook = new System.Windows.Forms.Button();
             this.checkTrace = new System.Windows.Forms.CheckBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.startButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -57,7 +58,7 @@
             // checkDisableAltF4
             // 
             this.checkDisableAltF4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.checkDisableAltF4.Location = new System.Drawing.Point(0, 53);
+            this.checkDisableAltF4.Location = new System.Drawing.Point(0, 80);
             this.checkDisableAltF4.Name = "checkDisableAltF4";
             this.checkDisableAltF4.Size = new System.Drawing.Size(147, 17);
             this.checkDisableAltF4.TabIndex = 14;
@@ -67,7 +68,7 @@
             // btnClear
             // 
             this.btnClear.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnClear.Location = new System.Drawing.Point(0, 27);
+            this.btnClear.Location = new System.Drawing.Point(0, 54);
             this.btnClear.Margin = new System.Windows.Forms.Padding(5);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(147, 26);
@@ -79,7 +80,7 @@
             // btnKeyHook
             // 
             this.btnKeyHook.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnKeyHook.Location = new System.Drawing.Point(0, 0);
+            this.btnKeyHook.Location = new System.Drawing.Point(0, 27);
             this.btnKeyHook.Margin = new System.Windows.Forms.Padding(5);
             this.btnKeyHook.Name = "btnKeyHook";
             this.btnKeyHook.Size = new System.Drawing.Size(147, 27);
@@ -92,7 +93,7 @@
             // 
             this.checkTrace.AutoSize = true;
             this.checkTrace.Dock = System.Windows.Forms.DockStyle.Top;
-            this.checkTrace.Location = new System.Drawing.Point(0, 70);
+            this.checkTrace.Location = new System.Drawing.Point(0, 97);
             this.checkTrace.Name = "checkTrace";
             this.checkTrace.Size = new System.Drawing.Size(147, 17);
             this.checkTrace.TabIndex = 15;
@@ -118,11 +119,24 @@
             this.splitContainer1.Panel2.Controls.Add(this.checkDisableAltF4);
             this.splitContainer1.Panel2.Controls.Add(this.btnClear);
             this.splitContainer1.Panel2.Controls.Add(this.btnKeyHook);
+            this.splitContainer1.Panel2.Controls.Add(this.startButton);
             this.splitContainer1.Panel2.Padding = new System.Windows.Forms.Padding(0, 0, 6, 0);
             this.splitContainer1.Size = new System.Drawing.Size(620, 217);
             this.splitContainer1.SplitterDistance = 465;
             this.splitContainer1.SplitterWidth = 2;
             this.splitContainer1.TabIndex = 16;
+            // 
+            // startButton
+            // 
+            this.startButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.startButton.Location = new System.Drawing.Point(0, 0);
+            this.startButton.Margin = new System.Windows.Forms.Padding(5);
+            this.startButton.Name = "startButton";
+            this.startButton.Size = new System.Drawing.Size(147, 27);
+            this.startButton.TabIndex = 16;
+            this.startButton.Text = "Start Hitman (Steam)";
+            this.startButton.UseVisualStyleBackColor = true;
+            this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
             // MainWindow
             // 
@@ -151,6 +165,7 @@
         private System.Windows.Forms.Button btnKeyHook;
         private System.Windows.Forms.CheckBox checkTrace;
         private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.Button startButton;
     }
 }
 

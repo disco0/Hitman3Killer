@@ -9,6 +9,7 @@ namespace Hitman3Killer
     {
         const string INSTALL_KEY_HOOK = "Enable Hook";
         const string REMOVE_KEY_HOOK = "Disable Hook";
+        const string STEAM_HITMAN_URI = "steam://rungameid/1659040";
 
         GlobalKeyHook globalKeyHook;
 
@@ -139,6 +140,14 @@ namespace Hitman3Killer
         private void btnClear_Click(object sender, EventArgs e)
         {
             listLog.Items.Clear();
+        }
+
+        private void startButton_Click(object sender, EventArgs e)
+        {
+            if(!HITMAN3Active())
+            {
+                System.Diagnostics.Process.Start(STEAM_HITMAN_URI);
+            }
         }
     }
 }
